@@ -1,0 +1,141 @@
+* {
+    box-sizing : border-box; 
+    margin : 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.6;
+    color: rgb(37, 37, 37);
+    background-color: #d1c4c4be;
+    text-align:left;    
+}
+
+header {
+    position: relative;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding : 0 100px; 
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+}
+
+.logo {
+    display : block; 
+    margin : 0 auto; 
+    width: 85px;
+    height: auto;
+}
+
+header a {
+    color : purple; 
+    text-decoration: none; 
+    white-space: nowrap;
+}
+
+header a:hover {
+    color : rgba(128, 0, 128, 0.637); 
+}
+
+.banniere {
+    background: url(./image/preview_the-last-of-us-part-1-remake-joel-ellie-wallpaper.jpg);
+    background-size: cover;
+    height: 100vh;
+    padding-top: 92px;
+    position : relative; 
+    z-index: 1;
+}
+
+.banniere_titre {
+    position : absolute; 
+    top : 5%;
+    left : 2%; 
+}
+
+.contenu {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display : flex;
+    flex-direction : column;
+    gap : 10px;
+}
+
+.bloc_personnages {
+    display : flex;
+    justify-content: center;
+    gap: 10px; 
+    margin: 30px auto; 
+    flex-wrap: wrap;
+}
+
+.image_personnage {
+    display: block; 
+    margin: 10px auto; 
+    max-width: 300px; 
+    border-radius: 8px;
+    width: 232px;
+    height: 169px;
+}
+
+.image_produits {
+    display: block; 
+    margin: 10px; 
+    max-width: 300px; 
+    border-radius: 10px;
+    width: 200px;
+    height: 300px;
+}
+
+h1 {
+    font-family : 'Anton', sans-serif;
+    font-size: 60px;
+    color: rgba(234, 234, 234, 0.806);
+}
+
+h2 {
+    font-family : 'Anton', sans-serif;
+    font-size: 32px;
+    color: #333; 
+    margin-bottom: 10px;
+
+}
+
+h3 {
+    font-family : 'Anton', sans-serif;
+    font-size : 25px;
+    color : rgba(18, 105, 18, 0.801);
+    padding-left: 20px; 
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-family : 'Anton', sans-serif;
+    font-size : 20px;
+    color:rgba(114, 65, 30, 0.753); 
+    padding-left : 30px; 
+    margin-bottom: 10px;
+
+}
+
+p {
+    font-size : 15px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 12px;
+}
+
+ul, ol {
+    margin-left : 20px; 
+    padding-left: 0;
+}
+
+footer {
+    background-color: #f4f4f4d5; 
+    padding: 20px;
+    text-align: center; 
+    border-top: 1px solid #ddd;
+    height: auto;
+}
