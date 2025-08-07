@@ -40,19 +40,31 @@ header a:hover {
     color : rgba(128, 0, 128, 0.637); 
 }
 
+
 .banniere {
-    background: url(./image/preview_the-last-of-us-part-1-remake-joel-ellie-wallpaper.jpg);
+    background: url('./image/preview_the-last-of-us-part-1-remake-joel-ellie-wallpaper.jpg') no-repeat center center;
     background-size: cover;
     height: 100vh;
+    min-height: 400px; /* Hauteur minimale */
     padding-top: 92px;
-    position : relative; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
     z-index: 1;
 }
 
 .banniere_titre {
-    position : absolute; 
-    top : 5%;
-    left : 2%; 
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.301);
+    border-radius: 5px;
+    margin: 0 auto;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .contenu {
@@ -138,4 +150,29 @@ footer {
     text-align: center; 
     border-top: 1px solid #ddd;
     height: auto;
+}
+
+
+/* Adaptation pour mobile */
+@media (max-width: 768px) {
+    .banniere {
+        height: 60vh;
+        min-height: 300px;
+    }
+
+    .banniere_titre {
+        font-size: 2.5rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banniere {
+        height: 50vh;
+        min-height: 250px;
+    }
+
+    .banniere_titre {
+        font-size: 1.8rem;
+    }
 }
